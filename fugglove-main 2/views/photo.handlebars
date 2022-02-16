@@ -1,0 +1,12 @@
+{{#if loggedIn}}
+<section class="photo">
+  <a href="/images/{{photo.filename}}" download="/images/{{photo.filename}}">
+  <img src="/images/{{photo.filename}}" alt="{{photo.description}}">
+  <div class="photo-details">
+    <h3>{{photo.title}}</h3>
+    </div>
+    </a>
+</section>
+{{else}}
+<a href="/login">You must login first to view these photos</a>
+{{/if}}
